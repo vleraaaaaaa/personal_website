@@ -20,6 +20,10 @@ body {
     padding-left: 7vw;
     padding-right: 7vw;
     align-items: center;
+    position: sticky;
+    top: 0%;
+    z-index: 100;
+    background-color: var(--color-background);
 }
 
 .header_nav {
@@ -58,32 +62,63 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    text-align: center;
-    position: relative; /* Для дополнительного контроля */
+    position: relative; 
+    min-height: 40vw;
 }
 
 .aboutMe_background {
     display: flex;
     justify-content: space-between;
-    align-items: flex-end; /* Выравниваем по нижнему краю */
+    align-items: flex-end; 
     width: 100%;
-    margin-bottom: -50px; /* Чтобы текст немного перекрывал изображения */
+    margin-bottom: -50px; 
 }
 
 #aboutMe_photo,
 #aboutMe_vectors {
-    width: auto; /* Максимальная ширина изображений */
-    height: 800px; /* Сохраняем пропорции */
-    flex-shrink: 0; /* Запрещаем уменьшение изображений */
+    width: auto; 
+    height: 40vw; 
+    flex-shrink: 0;
 }
 
 .aboutMe_content {
-    position: absolute; /* Абсолютное позиционирование текста */
-    top: 50%; /* Центрируем по вертикали */
-    left: 60%; /* Центрируем по горизонтали */
+    position: absolute; 
+    top: 50%;
+    left: 60%; 
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    z-index: 1; /* Поднимаем текст выше фона */
-    color: var(--color-primary); /* Используем переменную цвета */
+    z-index: 1; 
+    color: var(--color-primary); 
+}
+
+.aboutMe_content h1 {
+    margin-top: 0
+}
+
+.aboutMe_content p {
+    margin-top: 0;
+}
+
+.footer {
+    background-color: var(--color-primary);
+    color: var(--color-secondary);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 200px;
+    margin-top: 50px
+}
+
+.footer_imgs {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.footer_text {
+    text-align: center;
+
 }
