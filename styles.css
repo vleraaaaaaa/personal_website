@@ -6,7 +6,7 @@
     --color-secondary: #f3f3f3;
     --color-background: #ffffff;
     --color-hover: gray;
-    font-family: "Montserrat Alternates", sans-serif;
+    font-family: 'Montserrat Alternates', sans-serif;
 }
 
 body {
@@ -31,7 +31,6 @@ body {
     align-items: center;
     list-style-type: none;
     gap: 25px;
-
 }
 
 .header_left {
@@ -62,38 +61,38 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    position: relative; 
+    position: relative;
     min-height: 40vw;
 }
 
 .aboutMe_background {
     display: flex;
     justify-content: space-between;
-    align-items: flex-end; 
+    align-items: flex-end;
     width: 100%;
-    margin-bottom: -50px; 
+    margin-bottom: -50px;
 }
 
 #aboutMe_photo,
 #aboutMe_vectors {
-    width: auto; 
-    height: 40vw; 
+    width: auto;
+    height: 40vw;
     flex-shrink: 0;
 }
 
 .aboutMe_content {
-    position: absolute; 
+    position: absolute;
     top: 50%;
-    left: 60%; 
+    left: 60%;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    z-index: 1; 
-    color: var(--color-primary); 
+    z-index: 1;
+    color: var(--color-primary);
 }
 
 .aboutMe_content h1 {
-    margin-top: 0
+    margin-top: 0;
 }
 
 .aboutMe_content p {
@@ -109,7 +108,7 @@ body {
     align-items: center;
     width: 100%;
     height: 200px;
-    margin-top: 50px
+    margin-top: 50px;
 }
 
 .footer_imgs {
@@ -120,5 +119,58 @@ body {
 
 .footer_text {
     text-align: center;
+}
 
+.MyWorks {
+    padding-left: 7vw;
+    padding-right: 7vw;
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+}
+
+.MyWorks_imgs {
+    display: flex;
+    gap: 20px; /* Отступы между картинками */
+}
+
+.MyWorks_imgs_right {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Отступы между вертикальными элементами */
+    flex: 1; /* Занимает оставшееся пространство */
+}
+
+.MyWorks_imgs_right_up {
+    display: flex;
+    gap: 20px; /* Отступы между горизонтальными элементами */
+}
+
+/* Общие стили для всех картинок */
+.MyWorks_imgs img {
+    max-width: 100%; /* Ограничение ширины картинки */
+    height: auto; /* Сохранение пропорций */
+    flex: 1; /* Картинки будут равномерно распределяться */
+    object-fit: cover;
+}
+
+#pelms {
+    aspect-ratio: 3 / 4; /* Пример: пропорции 3:4 */
+}
+
+/* Индивидуальные настройки высоты для каждой картинки 
+#pelms {
+    height: calc(100vh * 0.4 + 20px); 
+}
+
+#rez {
+    height: calc(100vh * 0.2);
+}
+
+#orig {
+    height: calc(100vh * 0.2);
+}
+
+#klub {
+    height: calc(100vh * 0.15);
 }
