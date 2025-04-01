@@ -40,6 +40,7 @@ body {
 
 .header_left_h1 {
     margin-left: 5px;
+    font-weight: 800;
 }
 
 .header_nav_li a {
@@ -82,21 +83,26 @@ body {
 
 .aboutMe_content {
     position: absolute;
-    top: 50%;
+    top: 35%;
     left: 60%;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     z-index: 1;
     color: var(--color-primary);
+    left: 50%;
 }
 
 .aboutMe_content h1 {
     margin-top: 0;
+    font-weight: 900;
+    font-size: 4.5vw;
 }
+
 
 .aboutMe_content p {
     margin-top: 0;
+    font-size: 2vw;
 }
 
 .footer {
@@ -107,18 +113,41 @@ body {
     flex-direction: column;
     align-items: center;
     width: 100%;
-    height: 200px;
-    margin-top: 50px;
+    height: 180px;
+    margin-top: 40px;
 }
 
 .footer_imgs {
     display: flex;
     justify-content: space-between;
-    gap: 10px;
+    gap: 20px;
+    height: 17%;
 }
 
 .footer_text {
+    margin-top: 15px;
     text-align: center;
+}
+
+.Description {
+    padding-left: 7vw;
+    padding-right: 7vw;
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+}
+
+.Form {
+    padding-left: 7vw;
+    padding-right: 7vw;
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+}
+
+
+.Description_designer {
+    font-size: 1.4vw;
 }
 
 .MyWorks {
@@ -148,19 +177,18 @@ body {
 
 /* Общие стили для всех картинок */
 .MyWorks_imgs img {
-    max-width: 100%; /* Ограничение ширины картинки */
     height: auto; /* Сохранение пропорций */
     flex: 1; /* Картинки будут равномерно распределяться */
     object-fit: cover;
 }
 
 #pelms {
-    aspect-ratio: 3 / 4; /* Пример: пропорции 3:4 */
+
 }
 
-/* Индивидуальные настройки высоты для каждой картинки 
+/* Индивидуальные настройки высоты для каждой картинки */
 #pelms {
-    height: calc(100vh * 0.4 + 20px); 
+    /* height: calc(100vh * 0.4 + 20px);  */
 }
 
 #rez {
@@ -174,3 +202,8 @@ body {
 #klub {
     height: calc(100vh * 0.15);
 }
+
+h2 {
+    font-size: 2.5vw;
+}
+
