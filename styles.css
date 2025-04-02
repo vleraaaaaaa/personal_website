@@ -71,20 +71,56 @@ body {
     justify-content: space-between;
     align-items: flex-end;
     width: 100%;
-    margin-bottom: -50px;
+    overflow: hidden;
 }
 
+/* Общие стили */
 #aboutMe_photo,
 #aboutMe_vectors {
     width: auto;
     height: 40vw;
     flex-shrink: 0;
+    position: relative; /* Для корректного позиционирования */
+
+}
+
+/* Анимация для #aboutMe_photo (выезжает слева) */
+#aboutMe_photo {
+    animation: slideFromLeft 1.5s ease-out forwards;
+}
+
+/* Анимация для #aboutMe_vectors (выезжает справа) */
+#aboutMe_vectors {
+    animation: slideFromRight 1.5s ease-out;
+}
+
+/* Ключевые кадры для выезда слева */
+@keyframes slideFromLeft {
+    0% {
+        transform: translateX(-100%); /* Начальное положение: за пределами экрана слева */
+        opacity: 0; /* Начальная прозрачность */
+    }
+    100% {
+        transform: translateX(0); /* Конечное положение: на месте */
+        opacity: 1; /* Полная видимость */
+    }
+}
+
+/* Ключевые кадры для выезда справа */
+@keyframes slideFromRight {
+    0% {
+        transform: translateX(100%); /* Начальное положение: за пределами экрана справа */
+        opacity: 0; /* Начальная прозрачность */
+    }
+    100% {
+        transform: translateX(0); /* Конечное положение: на месте */
+        opacity: 1; /* Полная видимость */
+    }
 }
 
 .aboutMe_content {
     position: absolute;
-    top: 35%;
-    left: 60%;
+    top: 30%;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -141,8 +177,10 @@ body {
     padding-left: 7vw;
     padding-right: 7vw;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     margin-top: 15px;
+    font-size: 1.4vw;
+    
 }
 
 
@@ -205,5 +243,123 @@ body {
 
 h2 {
     font-size: 2.5vw;
+}
+
+.aboutMe2 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    min-height: 40vw;
+}
+
+.aboutMe2_background {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 100%;
+    margin-bottom: -50px;
+}
+
+
+
+#lera_zvezda {
+   width: auto;
+   height: 40vw;
+   flex-shrink: 0;
+   margin-left: 3vw;
+}
+
+.aboutMe2_content {
+    position: absolute;
+    top: 30%;
+    left: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    z-index: 1;
+    color: var(--color-primary);
+    left: 45%;
+}
+
+.aboutMe2_content h1 {
+    margin-top: 0;
+    font-weight: 900;
+    font-size: 4.5vw;
+}
+
+
+.aboutMe2_content p {
+    margin-top: 0;
+    font-size: 2vw;
+}
+
+#aboutMe2_vectors {
+    width: auto;
+    height: 40vw;
+    flex-shrink: 0;
+}
+
+.Form_place {
+    background-color: #F3F3F3;
+    border: none;
+    outline: none;
+    padding: 8px;
+    font-family: 'Montserrat Alternates', sans-serif;
+    padding: 12px; /* Внутренние отступы */
+    height: 2vw;    
+    font-size: 1.3vw;
+
+}
+.Form_email {
+    background-color: #F3F3F3;
+    border: none;
+    outline: none;
+    padding: 8px;
+    font-family: 'Montserrat Alternates', sans-serif;
+    padding: 12px; /* Внутренние отступы */
+    height: 2vw;
+    font-size: 1.3vw;
+}
+
+textarea {
+    background-color: #F3F3F3;
+    border: none;
+    outline: none;
+    padding: 8px;
+    font-family: 'Montserrat Alternates', sans-serif;
+    height: 10vw; /* Фиксированная высота */
+    resize: none; /* Отключаем возможность изменения размера */
+    padding: 12px;
+    font-size: 1.3vw;
+
+}
+
+.Form_items {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5vw; /* Расстояние между элементами формы */
+    width: 25vw; /* Ширина формы */
+    margin-left: auto;
+    
+}
+
+button {
+    background-color: black;
+    border: none;
+    outline: none;
+    padding: 8px;
+    font-family: 'Montserrat Alternates', sans-serif;
+    padding: 17px 30px; /* Внутренние отступы кнопки */
+    border: none;
+    cursor: pointer;
+    align-self: flex-start;
+    font-size: 1.3vw;
+}
+
+.Button-send {
+    color: white;
+    font-weight: 700;
 }
 
