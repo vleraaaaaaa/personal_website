@@ -178,9 +178,11 @@ body {
     padding-right: 7vw;
     display: flex;
     flex-direction: row;
-    margin-top: 15px;
+    align-items: end;
+    margin-top: 55px;
     font-size: 1.4vw;
-    
+    position: relative;
+    height: 40vw;
 }
 
 
@@ -309,7 +311,7 @@ h2 {
     font-family: 'Montserrat Alternates', sans-serif;
     padding: 12px; /* Внутренние отступы */
     height: 2vw;    
-    font-size: 1.3vw;
+    font-size: 1.2vw;
 
 }
 .Form_email {
@@ -320,7 +322,7 @@ h2 {
     font-family: 'Montserrat Alternates', sans-serif;
     padding: 12px; /* Внутренние отступы */
     height: 2vw;
-    font-size: 1.3vw;
+    font-size: 1.2vw;
 }
 
 textarea {
@@ -332,7 +334,7 @@ textarea {
     height: 10vw; /* Фиксированная высота */
     resize: none; /* Отключаем возможность изменения размера */
     padding: 12px;
-    font-size: 1.3vw;
+    font-size: 1.2vw;
 
 }
 
@@ -340,8 +342,9 @@ textarea {
     display: flex;
     flex-direction: column;
     gap: 1.5vw; /* Расстояние между элементами формы */
-    width: 25vw; /* Ширина формы */
+    width: 35vw; /* Ширина формы */
     margin-left: auto;
+    margin-top: 10vh;
     
 }
 
@@ -362,4 +365,23 @@ button {
     color: white;
     font-weight: 700;
 }
+
+#Form_vector {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 35vw;
+    width: auto;
+
+}
+
+.Form_text {
+}
+
+.networks {
+    display: flex;
+    gap: 1vw;
+    align-items: end;
+}
+
 
