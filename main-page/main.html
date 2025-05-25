@@ -4,6 +4,7 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link href="styles-main.css" rel="stylesheet" />
+        <script src="./script.js"></script>
         <title>vleraa</title>
     </head>
 
@@ -18,7 +19,6 @@
                     <li class="header_nav_li"><a href="../main-page/main.html">Главная</a></li>
                     <li class="header_nav_li"><a href="../my-works-page/my-works.html">Мои Работы</a></li>
                     <li class="header_nav_li"><a href="../contacts-page/contacts.html">Контакты</a></li>
-                    
                 </ul>
             </nav>
         </header>
@@ -47,6 +47,13 @@
                     Выполняю различного рода задания и работаю с такими программами как:
                 </p>
             </div>
+            <div class="carousel">
+                <button id="prev">Предыдущая</button>
+                <div class="carousel-inner">
+                    <div class="carousel-item"><img src="./images/images-Form/tg.svg" alt="Image 1" /></div>
+                </div>
+                <button id="next">Следующая</button>
+            </div>
         </section>
 
         <section class="MyWorks">
@@ -64,24 +71,23 @@
         </section>
 
         <section class="Form">
-            <img id='Form_vector' src='./images/images-Form/Vector 10.svg'>
+            <img id="Form_vector" src="./images/images-Form/Vector 10.svg" />
             <div class="Form_text">
                 <p class="Text-form">
                     Понравились мои работы и хочешь <br />
                     предложить сотрудничество?
                 </p>
                 <h2 class="Text-form2">Оставляй заявку!</h2>
-                <div class='networks'>
-                    <img src="./images/images-Form/insta.svg" alt="insta">
-                    <img src="./images/images-Form/vk.svg" alt="vk">
-                    <img src="./images/images-Form/tg.svg" alt="tg">
-                    <img src="./images/images-Form/whats.svg" alt="whats">
+                <div class="networks">
+                    <img src="./images/images-Form/insta.svg" alt="insta" />
+                    <img src="./images/images-Form/vk.svg" alt="vk" />
+                    <img src="./images/images-Form/tg.svg" alt="tg" />
+                    <img src="./images/images-Form/whats.svg" alt="whats" />
                 </div>
             </div>
-
             <form class="Form_items">
-                <input class="Form_place" type="text" placeholder="Имя" />
-                <input class="Form_email" type="text" placeholder="Email/Телефон" />
+                <input class="Form_place" type="text" placeholder="Имя" /><input />
+                <input class="Form_email" type="text" placeholder="Email/Телефон" /> <input />
                 <textarea placeholder="Ваше сообщение"></textarea>
                 <button><span class="Button-send">Отправить</span></button>
             </form>

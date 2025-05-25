@@ -81,7 +81,6 @@ body {
     height: 40vw;
     flex-shrink: 0;
     position: relative; /* Для корректного позиционирования */
-
 }
 
 /* Анимация для #aboutMe_photo (выезжает слева) */
@@ -135,7 +134,6 @@ body {
     font-size: 4.5vw;
 }
 
-
 .aboutMe_content p {
     margin-top: 0;
     font-size: 2vw;
@@ -185,7 +183,6 @@ body {
     height: 40vw;
 }
 
-
 .Description_designer {
     font-size: 1.4vw;
 }
@@ -222,10 +219,6 @@ body {
     object-fit: cover;
 }
 
-
-
-
-
 #rez {
     height: calc(100vh * 0.2);
 }
@@ -259,13 +252,11 @@ h2 {
     margin-bottom: -50px;
 }
 
-
-
 #lera_zvezda {
-   width: auto;
-   height: 40vw;
-   flex-shrink: 0;
-   margin-left: 3vw;
+    width: auto;
+    height: 40vw;
+    flex-shrink: 0;
+    margin-left: 3vw;
 }
 
 .aboutMe2_content {
@@ -286,7 +277,6 @@ h2 {
     font-size: 4.5vw;
 }
 
-
 .aboutMe2_content p {
     margin-top: 0;
     font-size: 2vw;
@@ -299,18 +289,17 @@ h2 {
 }
 
 .Form_place {
-    background-color: #F3F3F3;
+    background-color: #f3f3f3;
     border: none;
     outline: none;
     padding: 8px;
     font-family: 'Montserrat Alternates', sans-serif;
     padding: 12px; /* Внутренние отступы */
-    height: 2vw;    
+    height: 2vw;
     font-size: 1.2vw;
-
 }
 .Form_email {
-    background-color: #F3F3F3;
+    background-color: #f3f3f3;
     border: none;
     outline: none;
     padding: 8px;
@@ -321,7 +310,7 @@ h2 {
 }
 
 textarea {
-    background-color: #F3F3F3;
+    background-color: #f3f3f3;
     border: none;
     outline: none;
     padding: 8px;
@@ -330,7 +319,6 @@ textarea {
     resize: none; /* Отключаем возможность изменения размера */
     padding: 12px;
     font-size: 1.2vw;
-
 }
 
 .Form_items {
@@ -340,7 +328,6 @@ textarea {
     width: 35vw; /* Ширина формы */
     margin-left: auto;
     margin-top: 10vh;
-    
 }
 
 button {
@@ -367,10 +354,8 @@ button {
     left: 0;
     height: 35vw;
     width: auto;
-
+    z-index: -100;
 }
-
-
 
 .networks {
     display: flex;
@@ -378,4 +363,13 @@ button {
     align-items: end;
 }
 
+.carousel {
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.carousel button {
+    color: white;
+}
 
