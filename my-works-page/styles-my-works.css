@@ -57,7 +57,6 @@ body {
     height: auto;
 }
 
-
 .footer {
     background-color: var(--color-primary);
     color: var(--color-secondary);
@@ -82,8 +81,103 @@ body {
     text-align: center;
 }
 
-
-
 h2 {
     font-size: 2.5vw;
+}
+
+/* Общие стили */
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* Секция "Фотографика" */
+.photos,
+.projects,
+.calligraphy {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Заголовок */
+.photos h1,
+.projects h1,
+.calligraphy h1 {
+    font-size: 4vw;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Грид для фотографий */
+.photo-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Три колонки равной ширины */
+    height: fit-content;
+    gap: 15px; /* Отступы между ячейками */
+    justify-content: center;
+    align-items: center;
+}
+
+/* Каждая фотография */
+.photo-item,
+.grid-img,
+.calligraphy-item {
+    width: 100%;
+    height: auto;
+    max-height: 600px;
+    border: 2px solid transparent; /* Прозрачная граница для активного элемента */
+    transition: border 0.3s ease; /* Анимация при hover */
+}
+
+/* Активный элемент (например, при hover) */
+.photo-item:hover {
+    border: 2px solid #007bff; /* Голубая граница */
+}
+
+/* Отключение дефолтных стилей изображений */
+.photo-item {
+    object-fit: cover; /* Сохранение пропорций изображения */
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 200px);
+    gap: 10px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.photo-item.full {
+    grid-row: 1 / span 2;
+}
+
+.photo-item.top {
+    grid-row: 1;
+}
+
+.photo-item.bottom {
+    grid-row: 2;
+}
+
+.item {
+    background: #eee;
+    border: 2px solid black;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
+
+.item-project p {
+    font-size: 20px;
+}
+
+.calligraphy-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
 }
