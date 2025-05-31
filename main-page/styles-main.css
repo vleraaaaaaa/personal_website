@@ -184,7 +184,7 @@ body {
 }
 
 .Description_designer {
-    font-size: 1.4vw;
+    font-size: 3.0vw;
 }
 
 .MyWorks {
@@ -364,12 +364,190 @@ button {
 }
 
 .carousel {
+    margin-top: 15px;
     display: flex;
     justify-content: space-between;
-    
+    align-items: center;
 }
 
 .carousel button {
     color: white;
+    align-self: center;
 }
 
+.carousel-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 50%;
+}
+
+/* === Адаптивность для мобильных устройств === */
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        align-items: flex-start;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    .header_left {
+        margin-bottom: 10px;
+    }
+
+    .header_nav {
+        flex-wrap: wrap;
+        gap: 10px;
+        justify-content: flex-start;
+    }
+
+    .Description_text {
+        font-size: 6vw;
+    }
+
+    .aboutMe_content {
+        top: 28%;
+        left: 70%;
+        transform: translateX(-50%);
+        text-align: center;
+        align-items: center;
+    }
+
+    .aboutMe_content h1 {
+        font-size: 6vw;
+    }
+
+    .aboutMe_content p {
+        font-size: 3.5vw;
+    }
+
+    #aboutMe_photo,
+    #aboutMe_vectors {
+        height: 30vh;
+    }
+
+    #Form_vector {
+        display: none;
+    }
+
+    .Description,
+    .Form,
+    .MyWorks {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    .MyWorks_imgs {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .MyWorks_imgs_right_up {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .MyWorks_imgs img {
+        width: 100%;
+        height: auto;
+    }
+
+    .Text-form {
+        font-size: 4vw;
+    }
+
+    h2 {
+        font-size: 6vw;
+    }
+
+    .carousel-inner {
+        width: 80%;
+        overflow: hidden;
+    }
+
+    .carousel-inner img {
+        width: 30px;
+        height: auto;
+    }
+
+    .carousel button svg {
+        width: 20px;
+        height: 20px;
+    }
+
+    .Form_items {
+        width: 90%;
+        margin-top: 20px;
+    }
+
+    .Form_place,
+    .Form_email,
+    textarea {
+        font-size: 4vw;
+        padding: 10px;
+    }
+
+    .Form {
+        margin-top: 25px;
+        height: auto;
+        flex-direction: column;
+    }
+
+    .Form_text {
+        width: 100%;
+    }
+
+    button {
+        font-size: 4vw;
+        padding: 10px 20px;
+    }
+
+    .networks {
+        display: none;
+    }
+
+    .networks img {
+        width: 40px;
+        height: auto;
+    }
+
+    .footer_imgs {
+        gap: 15px;
+    }
+
+    .footer_text p {
+        font-size: 3vw;
+    }
+}
+
+/* === Для очень маленьких экранов (< 480px) === */
+@media (max-width: 480px) {
+    .header_left_h1 {
+        font-size: 20px;
+    }
+
+    .header_nav_li a {
+        font-size: 14px;
+    }
+
+    .carousel button {
+        padding: 5px;
+    }
+
+    .carousel-inner {
+        width: 100%;
+        justify-content: space-evenly;
+    }
+
+    .carousel-inner img {
+        width: 60px;
+        height: auto;
+    }
+
+    .Form_items {
+        gap: 15px;
+        width:  100%;
+    }
+
+
+}
