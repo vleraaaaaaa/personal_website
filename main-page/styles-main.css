@@ -549,5 +549,9 @@ button {
         width:  100%;
     }
 
+    .Description_designer {
+    font-size: 4.0vw;
+}
+
 
 }
